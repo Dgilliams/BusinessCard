@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="330dp"
+    android:layout_height="220dp"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#E64A19"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:paddingRight="-4dp"
+                android:src="@drawable/ic_bluetooth_connected_black_24dp"
+                android:tint="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:paddingRight="-6dp"
+                android:src="@drawable/ic_signal_cellular_4_bar_black_24dp"
+                android:tint="@color/white" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:paddingRight="-4dp"
+                android:src="@drawable/ic_battery_charging_full_black_24dp"
+                android:tint="@color/white" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="4dp"
+                android:text="2:40"
+                android:textSize="12sp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/card_1_toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"></include>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1_card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_1_toolbar"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:background="@color/gator_blue"
+            android:theme="@style/EditTextStyle"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/card_1_FAB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:tint="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="false"
+                    app:fabSize="mini"
+                    android:elevation="4dp"
+                    android:layout_alignParentRight="true" />
+
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_android_black_24dp"
+                    android:tint="@color/android_green"
+                    />
+
+                <EditText
+                    android:id="@+id/card_1_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="4dp"
+                    android:background="@android:color/transparent"
+                    android:layout_toRightOf='@id/profile_pic'
+                    android:text="Software Developer"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:gravity="right"
+                    />
+                <EditText
+                    android:id="@+id/card_1_sub_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="4dp"
+                    android:background="@android:color/transparent"
+                    android:layout_toRightOf='@id/profile_pic'
+                    android:layout_below="@id/card_1_header"
+                    android:text="Android, Java, Web, Graphic Design"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:gravity="right"
+                    />
+
+                <EditText
+                    android:id="@+id/card_1_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_pic"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/grey"
+                    android:inputType="phone"
+                    android:text="(772)-713-1983"
+                    android:textColor="@color/black"
+
+                    />
+
+                <EditText
+                    android:id="@+id/card_1_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_1_phone"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/grey"
+
+                    android:inputType="textEmailAddress"
+                    android:text="DamosDesigns@gmail.com"
+                    android:textColor="@color/black"
+
+                    />
+
+                <!--<Space-->
+                    <!--android:id="@+id/btwn_phone_email_space"-->
+                    <!--android:layout_below="@id/card_1_email"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="4dp" />-->
+
+                <EditText
+                    android:id="@+id/card_1_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_1_email"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_http_black_24dp"
+                    android:drawablePadding="8dp"
+
+                    android:drawableTint="@color/grey"
+
+                    android:inputType="textWebEditText"
+                    android:text="DamosDesigns.com"
+                    android:textColor="@color/black"
+
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

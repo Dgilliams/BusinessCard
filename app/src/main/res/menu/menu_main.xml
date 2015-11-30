@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.damo.myapplication.MainActivity">
+    <item
+        android:id="@+id/action_screenshot"
+        android:orderInCategory="100"
+        android:title="@string/menu_screenshot"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_file_download_white_24dp"
+        />
+    <item
+        android:id="@+id/action_email"
+        android:orderInCategory="100"
+        android:title="@string/menu_email"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_email_white_24dp"
+        />
+</menu>
