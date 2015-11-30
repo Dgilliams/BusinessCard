@@ -1,8 +1,14 @@
 <resources>
-    <string name="app_name">BusinessCard</string>
+    <string name="app_name">Material Business Card</string>
     <string name="action_settings">Settings</string>
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="menu_screenshot">Save Screenshot to Device</string>
     <string name="menu_email">Email Card</string>
+    <string name="card_toolbar_name">Damien Gilliams</string>
+    <string name="card_phone">(772) -713 -1983</string>
+    <string name="card_email">DamosDesigns@gmail.com</string>
+    <string name="card_website">https://www.DamosDesigns.com</string>
+    <string name="card_subtitle">Android, Java, Web, Graphic Design</string>
+    <string name="card_title">Software Developer</string>
 
 </resources>
