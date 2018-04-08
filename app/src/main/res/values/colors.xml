@@ -12,7 +12,7 @@
     <color name="dark_blue">#FF000080</color>
     <color name="gator_orange">#FF4A00</color>
     <color name="transparent">#00000000</color>
-    <color name="ColorPrimary">#FF0000FF</color>
+    <color name="ColorPrimary">#00abf0</color>
     <color name="primary_dark_material_dark">#ffffff</color>
     <color name="foreground_material_light">#ffffff</color>
     <color name="primary_text_default_material_light">#deffffff</color>

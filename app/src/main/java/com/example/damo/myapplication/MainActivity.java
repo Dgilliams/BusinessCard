@@ -3,12 +3,12 @@ package com.example.damo.myapplication;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.format.DateFormat;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -91,14 +91,15 @@ public class MainActivity extends AppCompatActivity {
 
     private void takeScreenshot() {
         Date now = new Date();
-        android.text.format.DateFormat.format("yyyy-MM-dd_hh:mm:ss", now);
+        String formattedDate = DateFormat.format("yyyy-MM-dd_hh:mm:ss", now).toString();
 
         try {
             // image naming and path  to include sd card  appending name you choose for file
-            String mPath = Environment.getExternalStorageDirectory().toString() + "/Downloads/" + now + ".jpg";
+            String mPath = Environment.getExternalStorageDirectory().toString() + "/Downloads/" + "Card:" + formattedDate + ".jpg";
 
             // create bitmap screen capture
-            View v1 = getWindow().getDecorView().getRootView();
+//            View v1 = getWindow().getDecorView().getRootView();
+            View v1 = findViewById(R.id.card_1);
             v1.setDrawingCacheEnabled(true);
             Bitmap bitmap = Bitmap.createBitmap(v1.getDrawingCache());
             v1.setDrawingCacheEnabled(false);
